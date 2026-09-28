@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Open-Sans ;
+    src: url(OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Open-SansRegular ;
+    src: url(OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato", sans-serif;
+}
+#us-map{
+  display: block;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: 100%;
+}
+path:hover, circle:hover {
+  stroke: #99D8C9 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #99D8C9 !important;
+  cursor: default;
+}
+
+#info-box {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #000000;
+  border: 2px;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: Open-Sans;
+  color: #ffffff;
+  font-size: 14px;
+}

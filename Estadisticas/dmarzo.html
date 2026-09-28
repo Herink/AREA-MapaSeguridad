@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script type='text/javascript' src='JS.js'></script>
+  <link rel="stylesheet" type="text/css" href="CSS.css" />
+  <style>
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+margin-top: 20px;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: white;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #7eaba4;
+    color: white;
+}
+</style>
+<body>
+  <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Enero
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="genero.html">Graficos</a>
+      <a href="denero.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Febrero
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gfebrero.html">Graficos</a>
+      <a href="dfebrero.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Marzo
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gmarzo.html">Graficos</a>
+      <a href="dmarzo.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Abril
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gabril.html">Graficos</a>
+      <a href="dabril.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Mayo
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gmayo.html">Graficos</a>
+      <a href="dmayo.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Junio
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gjunio.html">Graficos</a>
+      <a href="djunio.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Julio
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gjulio.html">Graficos</a>
+      <a href="djulio.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Agosto
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gagosto.html">Graficos</a>
+      <a href="dagosto.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Septiembre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gseptiembre.html">Graficos</a>
+      <a href="dseptiembre.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Octubre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="goctubre.html">Graficos</a>
+      <a href="doctubre.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Noviembre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gnoviembre.html">Graficos</a>
+      <a href="dnoviembre.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Diciembre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gdiciembre.html">Graficos</a>
+      <a href="ddiciembre.html">Datos</a>
+    </div>
+  </div>
+</div>
+  <table id="customers">
+<tr><th>Fecha</th><th>Dia</th><th>Hora</th><th>Caratula</th><th>Localidad</th><th>Sector</th><th>Calle</th><th>Lugar</th><th>Denunciante</th><th>Imputado</th><th>Sintesis</th></tr></thead><tbody>
+   <tr><td>02/03/2018</td><td>Viernes</td><td>01:30</td><td>Lesiones</td><td>Ostende</td><td>B1</td><td>Madero y Estrasburgo</td><td>Via Publica</td><td>Personal Policial</td><td>Martini Axel Demian y Toriano Jazmin Daiana</td><td>Los dos imputados estaban en un terreno y al llegar personal policial intentan darse a la fuga, una vez aprehendidos comienzan a confrontar al personal.</td></tr>
+   <tr><td>02/03/2018</td><td>Viernes</td><td>20:30</td><td>Hurto</td><td>Ostende</td><td>B3</td><td>Av La Plata 1039</td><td>Lugar Particular</td><td>Kauf Adolfo</td><td>Nn</td><td>Autores ignorados le sustraen el bolso con documentacion varia y llaves del auto mientras este se retiro a buscar otro producto en el supermercado.</td></tr>
+   <tr><td>02/03/2018</td><td>Viernes</td><td>22:00</td><td>Hurto</td><td>Ostende</td><td>B5</td><td>Ayacucho 1236</td><td>Domicilio Particular</td><td>Aguirre Roberto Sebastian</td><td>Nn</td><td>Autores ignorados le sustraen un televisor y una manta del domicilio</td></tr>
+   <tr><td>02/03/2018</td><td>Viernes</td><td>23:00</td><td>Hurto</td><td>Carilo</td><td>D3</td><td>Eucaliptus y Ñandu</td><td>Domicilio Particular</td><td>Correa Andrea Fabiana</td><td>Nn</td><td>Autores ignorados ingresan por puerta trasera y sustraen dos celulares, una cartera y documentacion varia.</td></tr>
+   <tr><td>05/03/2018</td><td>Lunes</td><td>10:23</td><td>Hurto</td><td>Ostende</td><td>B4</td><td>San Petesburgo 1521</td><td>Domicilio Particular</td><td>Edgardo Oscar Santilli</td><td>Nn</td><td>Autores ignorados previo ingresar por ventan sustraen tres celulares y herramientas de trabajo varias.</td></tr>
+   <tr><td>05/03/2018</td><td>Lunes</td><td>21:30</td><td>Hurto</td><td>Ostende</td><td>B1</td><td>Estocolmo 688</td><td>Domicilio Particular</td><td>Mirma Vanesa Miranda</td><td>Nn</td><td>Autores ignorados ingresan al domicilio y sustraen un televisor, una notebook, un parlante, una mochila con documentacion varia y 10000 pesos</td></tr>
+   <tr><td>05/03/2018</td><td>Lunes</td><td>22:43</td><td>Lesiones</td><td>Ostende</td><td>B5</td><td>Canada y Arcachon</td><td>Via Publica</td><td>Gonzalez Mari Teresa</td><td>Nn</td><td>Confrontacion</td></tr>
+   <tr><td>06/03/2018</td><td>Martes</td><td>A establecer</td><td>Hurto</td><td>Pinamar</td><td>A2</td><td>Submarino Peral 3075</td><td>Domicilio Particular</td><td>Franzatti Edgardo Oscar Santos</td><td>Nn</td><td>Autores ignorados sin ejercer violencia ingresan al domicilio y sustraen 8000 dolares, 35000 pesos, Rolex, tres pistolas semi automaticas, una carabina semiautomatica, una escopeta, un revolver, escopeta de dos cañones.</td></tr>
+   <tr><td>07/03/2018</td><td>Miercoles</td><td>11:00</td><td>Hurto</td><td>Carilo</td><td>D2</td><td>Divisadero 1224</td><td>Domicilio Particular</td><td>Stonelli Ricardo</td><td>Nn</td><td>Autores ignorados sin ejercer violencia ingresan y sustraen un celular, un reloj, alajas varias y un bolso de playa</td></tr>
+   <tr><td>08/03/2018</td><td>Jueves</td><td>07:55</td><td>Robo</td><td>Ostende</td><td>B4</td><td>Victor Hugo y Loria</td><td>Domicilio Particular</td><td>Mamani Patricia Alejandra</td><td>Nn</td><td>Autores ignorados previo romper el candado de la puerta de ingreso sustraen un bolso con vestimenta varia y 3000 pesos.</td></tr>
+   <tr><td>08/03/2018</td><td>Jueves</td><td>18:30</td><td>Robo</td><td>Ostende</td><td>B4</td><td>Ostende Tuyu 484</td><td>Domicilio Particular</td><td>Cardozo Sergio Ariel</td><td>Nn</td><td>Autores ignorados previo dañar la ventana del domicilio sustraen 8000 pesos y un telefono</td></tr>
+   <tr><td>09/03/2018</td><td>Viernes</td><td>11:45</td><td>Lesiones</td><td>Ostende</td><td>B2</td><td>Dante y Repetto</td><td>Via Publica</td><td>Hernan Vera Ayala</td><td>Maria Isabel Amengual</td><td>Accidente de Transito</td></tr>
+   <tr><td>09/03/2018</td><td>Viernes</td><td>16:30</td><td>Lesiones</td><td>Pinamar</td><td>A6</td><td>Cazon y Valle Fertil</td><td>Via Publica</td><td>Fernandez Tomas Owen</td><td>Folgoso Francisco</td><td>Accidente de Transito</td></tr>
+   <tr><td>10/03/2018</td><td>Sabado</td><td>20:00</td><td>Hurto</td><td>Carilo</td><td>D1</td><td>Codorniz 147</td><td>Domicilio Particular</td><td>Azzolini Enrique Ruben</td><td>Nn</td><td>Autores ignorados ingresan sin ejercer violencia y sustraen un celular, dos notebook, mochila y dinero en efectivo a constatar.</td></tr>
+   <tr><td>12/03/2018</td><td>Lunes</td><td>14:00</td><td>Hurto</td><td>Ostende</td><td>B5</td><td>Canada 2061</td><td>Domicilio Particular</td><td>Gayoso Analia</td><td>Nn</td><td>Autores ignorados previo ingresar por una ventana sin ejercer violencia sustraen 400 dolares y 30000 pesos.</td></tr>
+   <tr><td>13/03/2018</td><td>Martes</td><td>00:00</td><td>Hurto</td><td>Pinamar</td><td>A1</td><td>Artemisa 261</td><td>Domicilio Particular</td><td>Maria Cristina Fuentes</td><td>Nn</td><td>Autores ignorados ingresan por ventanal del comedor y sustraen una notebook, una tablet, televisor 32 pulgadas, un reproductor de musica, 1500 pesos y billetera con documentacion varia.</td></tr>
+   <tr><td>13/03/2018</td><td>Martes</td><td>01:20</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Del Odiseo</td><td>Domicilio Particular</td><td>Miranda Vicente Ernesto</td><td>Nn</td><td>Autores ignorados ingresan forzando ventana trasera y sustraen un televisor 50 pulgadas.</td></tr>
+   <tr><td>14/03/2018</td><td>Miercoles</td><td>22:00</td><td>Ley Nro. 23.737</td><td>Ostende</td><td>B4</td><td>Anspach y Arcachon</td><td>Via Publica</td><td>Personal Policial</td><td>Gayoso Ayala Fernando</td><td>2,1 grms de Marihuana</td></tr>
+   <tr><td>15/03/2018</td><td>Jueves</td><td>10:30</td><td>Robo</td><td>Valeria del Mar</td><td>C2</td><td>Alzaga 65</td><td>Domicilio Particular</td><td>Giammatteo Jose Ramon</td><td>Nn</td><td>Autores ignorados previo forzar una ventana sustraen una netbook y 40000 pesos.</td></tr>
+   <tr><td>16/03/2018</td><td>Viernes</td><td>20:30</td><td>Robo</td><td>Carilo</td><td>D1</td><td>Chorlo 704</td><td>Domicilio Particular</td><td>Muñoz Manuel Javier</td><td>Nn</td><td>Autores ignorados previo forzar y romper la puerta ingresan y sustraen un ipod, guitarra electrica ibanez y una mochila.</td></tr>
+   <tr><td>16/03/2018</td><td>Viernes</td><td>A establecer</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Del Libertador y Bunge</td><td>Domicilio Particular</td><td>Cassels Roberto Keith</td><td>Nn</td><td>Autores ignorados ingresan por puerta trasera y sustraen una mochila, un ipad y un iphone</td></tr>
+   <tr><td>17/03/2018</td><td>Sabado</td><td>08:30</td><td>Damnificacion</td><td>Carilo</td><td>D2</td><td>Boyero y Arrayan</td><td>Lugar Particular</td><td>Laura Gabriela Marin</td><td>Nn</td><td>Un camion de residuo de la empresa Santa Elena habria desplazado 10 cm y fisurado un deposito de residuo</td></tr>
+   <tr><td>17/03/2018</td><td>Sabado</td><td>18:10</td><td>Hurto</td><td>Ostende</td><td>B5</td><td>Dakar y Ayacucho</td><td>Domicilio Particular</td><td>Luciana Ayelen Rodriguez</td><td>Romina Rojas</td><td>Dejo la bicicleta en la vivienda de la amiga la cual ahora se niega de devolversela.</td></tr>
+   <tr><td>17/03/2018</td><td>Sabado</td><td>19:30</td><td>Damnificacion</td><td>Valeria del Mar</td><td>B5</td><td>Av. Juan de Garay Y Del Tuyú</td><td>Domicilio Particular</td><td>Bello Manuel</td><td>Nn</td><td>Autores ignorados previo violentar las ventanas ingresan y prenden fuego dos colchones.</td></tr>
+   <tr><td>17/03/2018</td><td>Sabado</td><td>21:00</td><td>Lesiones</td><td>Pinamar</td><td>A4</td><td>Martin Pescador y Shaw</td><td>Via Publica</td><td>Virgilio Marian Lina</td><td>Nn</td><td>Confrontacion</td></tr>
+   <tr><td>18/03/2018</td><td>Domingo</td><td>09:00</td><td>Lesiones</td><td>Ostende</td><td>B4</td><td>Victor Hugo y Anspach</td><td>Lugar Particular</td><td>Aldana Villa Pedro</td><td>Nn</td><td>Confrontacion</td></tr>
+   <tr><td>18/03/2018</td><td>Domingo</td><td>13:30</td><td>Hurto</td><td>Pinamar</td><td>A4</td><td>Besugo 1006</td><td>Domicilio Particular</td><td>Lagos Mabel Beatriz</td><td>Nn</td><td>Autores ignorados ingresan sin ejercer violencia y sustraen un celular y 9000 pesos</td></tr>
+   <tr><td>21/03/2018</td><td>Miercoles</td><td>01:00</td><td>Robo</td><td>Pinamar</td><td>A5</td><td>Pejerrey 1693</td><td>Domicilio Particular</td><td>Ponce Jenuano </td><td>Arias Porteño</td><td>El señor Arias "Porteño" es inquilino del denunciante quien le sustrae del pantalon tras frocejear la suma de 3300 pesos.</td></tr>
+   <tr><td>22/03/2018</td><td>Jueves</td><td>06:30</td><td>Ley Nro. 23.737</td><td>Pinamar</td><td>A4</td><td>Libertador y Tiburon</td><td>Via Publica</td><td>Personal Policial</td><td>Ruben Daniel Barrera y Martin Oscar Chavez</td><td>0,3 gramos de Marihuana y 0,5 gramos de Cocaina.</td></tr>
+   <tr><td>23/03/2018</td><td>Viernes</td><td>07:00</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Cangrejo 1866</td><td>Via Publica</td><td>Perez Caro Carla</td><td>Nn</td><td>Autores ignorados sustraen una moto y un casco estacionada en la vereda del denunciante</td></tr>
+   <tr><td>25/03/2018</td><td>Domingo</td><td>19:00</td><td>Tentativa de Robo</td><td>Pinamar</td><td>A5</td><td>Melgacho 1718</td><td>Via Publica</td><td>Beltran Luis Alberto</td><td>Leonardo Hugo Lopez</td><td>Personal policial es comisionado al lugar donde encuentran a un masculino forzando la puerta de un vehiculo, el mismo es aprehendido.</td></tr>
+   <tr><td>25/03/2018</td><td>Domingo</td><td>21:30</td><td>Robo</td><td>Carilo</td><td>D1</td><td>Molle 912</td><td>Domicilio Particular</td><td>Poppi Nahuel Alfredo</td><td>Nn</td><td>Autores ignorados habrian ingresado previo romper puerta trasera y sustraen una notebook, dinero en efectivo a constatar y documentacion varia.</td></tr>
+   <tr><td>25/03/2018</td><td>Domingo</td><td>23:30</td><td>Lesiones</td><td>Pinamar</td><td>A5</td><td>Eneas y Del Cazon</td><td>Via Publica</td><td>Godoy Aristides Jose</td><td>Daniel Forment</td><td>Accidente de Transito</td></tr>
+   <tr><td>25/03/2018</td><td>Domingo</td><td>A establecer</td><td>Robo</td><td>Valeria del Mar</td><td>C2</td><td>-56.89682, -37.13531</td><td>Domicilio Particular</td><td>Personal Policial</td><td>Nn</td><td>Autores ignorados habrian violentado la ventana del domicilio y sustraido un televisor.</td></tr>
+   <tr><td>27/03/2018</td><td>Martes</td><td>09:00</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Lenguado 1648</td><td>Via Publica</td><td>Araujo Cristian Javier</td><td>Nn</td><td>Autores ignorados sustraen un vehiculo estacionado en la vereda, el mismo posee seguro contra robos.</td></tr>
+   <tr><td>29/03/2018</td><td>Jueves</td><td>00:30</td><td>Lesiones</td><td>Pinamar</td><td>A6</td><td>Valle Fertil y Constitucion</td><td>Via Publica</td><td>Micaela Agustina Carrizo</td><td>Marchetti Sebastian</td><td>Accidente de Transito</td></tr>
+   <tr><td>29/03/2018</td><td>Jueves</td><td>18:00</td><td>Lesiones</td><td>Pinamar</td><td>A5</td><td>-56.87384, -37.11132</td><td>Via Publica</td><td>Federico Matias Gonzalez Beniuc</td><td>Magariños Ramiro Jesus</td><td>Accidente de Transito</td></tr>
+   <tr><td>29/03/2018</td><td>Jueves</td><td>20:15</td><td>Hurto</td><td>Carilo</td><td>D2</td><td>Chaja y Araucaria </td><td>Domicilio Particular</td><td>Panario Guillermo Francisco</td><td>Nn</td><td>Autores ignorados sin ejercer violencia ingresan por la ventana y sustraen dos celulares, y dinero en efectivo a constatar.</td></tr>
+   <tr><td>29/03/2018</td><td>Jueves</td><td>A establecer</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>De las Dunas 364</td><td>Domicilio Particular</td><td>Fernando Andres Doreman</td><td>Nn</td><td>Autores ignorados habrian ingresado al domicilio y sustraido del comedor un iphone </td></tr>
+   <tr><td>30/03/2018</td><td>Viernes</td><td>A establecer</td><td>Lesiones</td><td>Pinamar</td><td>A1</td><td>El Más Allá</td><td>Via Publica</td><td>Murguia Elida Noemi</td><td>Fernandez Fernando Gabriel</td><td>Accidente de Transito</td></tr>
+   <tr><td>31/03/2018</td><td>Sabado</td><td>21:00</td><td>Hurto</td><td>Carilo</td><td>D3</td><td>Montero 460</td><td>Domicilio Particular</td><td>Elias Daniel Antonio</td><td>Nn</td><td>Autores ignorados habrian ingresado por puerta trasera y sustraen dos notebooks</td></tr>
+  </tbody></table>
+</body>
+</html>

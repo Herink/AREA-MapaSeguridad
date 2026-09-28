@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <script type='text/javascript' src='JS.js'></script>
+  <link rel="stylesheet" type="text/css" href="CSS.css" />
+  <style>
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+margin-top: 20px;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: white;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #7eaba4;
+    color: white;
+}
+</style>
+<body>
+  <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Enero
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="genero.html">Graficos</a>
+      <a href="denero.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Febrero
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gfebrero.html">Graficos</a>
+      <a href="dfebrero.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Marzo
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gmarzo.html">Graficos</a>
+      <a href="dmarzo.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Abril
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gabril.html">Graficos</a>
+      <a href="dabril.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Mayo
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gmayo.html">Graficos</a>
+      <a href="dmayo.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Junio
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gjunio.html">Graficos</a>
+      <a href="djunio.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Julio
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gjulio.html">Graficos</a>
+      <a href="djulio.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Agosto
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gagosto.html">Graficos</a>
+      <a href="dagosto.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Septiembre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gseptiembre.html">Graficos</a>
+      <a href="dseptiembre.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Octubre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="goctubre.html">Graficos</a>
+      <a href="doctubre.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Noviembre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gnoviembre.html">Graficos</a>
+      <a href="dnoviembre.html">Datos</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Diciembre
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gdiciembre.html">Graficos</a>
+      <a href="ddiciembre.html">Datos</a>
+    </div>
+  </div>
+</div>
+<table id="customers">
+<tr><th>Fecha</th><th>Dia</th><th>Hora</th><th>Caratula</th><th>Localidad</th><th>Sector</th><th>Calle</th><th>Lugar</th><th>Denunciante</th><th>Imputado</th><th>Sintesis</th></tr>
+ <tr><td>02/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Del Tuyu 919</td><td>Domicilio Particular</td><td>Montenegro Gonzalo Sebastian</td><td>Nn</td><td>Autores ignorados fuerzan la cerradura de la casa y sustraen dos celulares.</td></tr>
+ <tr><td>02/01/2018</td><td>Martes</td><td>01:30</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>Del Tuyu 919</td><td>Domicilio Particular</td><td>Uboldi Fernanda</td><td>Nn</td><td>Autores ignorados ingresan por la ventana y sustraen una camara, correa artesanal, 6000 pesos, un celular y una billetera</td></tr>
+ <tr><td>03/01/2018</td><td>Miercoles</td><td>15:03</td><td>Lesiones</td><td>Carilo</td><td>D1</td><td>Paraiso y Hornero</td><td>Via Publica</td><td>Gaston Messias</td><td>Alvaro Ignacio Lopez</td><td>Colision entra una moto y un auto</td></tr>
+ <tr><td>03/01/2018</td><td>Miercoles</td><td>14:00</td><td>Robo</td><td>Carilo</td><td>D3</td><td>Encina 900</td><td>Lugar Particular</td><td>Esturla Juan Bautista</td><td>Nn</td><td>Autores ignorados previo violentar una ventana ingresan y sustraen zapatillas y campera. Los mismos rompen sensor de la alarma.</td></tr>
+ <tr><td>03/01/2018</td><td>Miercoles</td><td>20:25</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>De las Medusas 1181</td><td>Domicilio Particular</td><td>Balcarce Ana Maria</td><td>Nn</td><td>Autores ignorados fuerzan la puerta trasera y sustraen un celular</td></tr>
+ <tr><td>03/01/2018</td><td>Miercoles</td><td>16:00</td><td>Hurto</td><td>Pinamar</td><td>A4</td><td>Av. Del Mar y De las Artes</td><td>Lugar Publico</td><td>Androver Lorena Fernanda</td><td>Nn</td><td>La denunciante se olvida la billetera en el baño y al volver despues de unos minutos ya no se encontraba ahí.</td></tr>
+ <tr><td>04/01/2018</td><td>Jueves</td><td>12:30</td><td>Hurto</td><td>Ostende</td><td>B1</td><td>Bartolomé Mitre</td><td>Domicilio Particular</td><td>Mauro Damian Porjolovsky</td><td>Nn</td><td>Al regresar al lugar de trabajo constata que le habrian sustraido su laptop personal.</td></tr>
+ <tr><td>04/01/2018</td><td>Jueves</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>Odiseo 900</td><td>Domicilio Particular</td><td>Diego Dario Nanfra</td><td>Nn</td><td>Autores ignorados sustraen una tablet.</td></tr>
+ <tr><td>04/01/2018</td><td>Jueves</td><td>21:00</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>De las Pleyades 1409</td><td>Domicilio Particular</td><td>San Martin Horacio Miguel</td><td>Nn</td><td>Autores ignorados ingresan por la ventana del departamento y sustraen una cartera, un celuar y 5000 dolares.</td></tr>
+ <tr><td>05/01/2018</td><td>Viernes</td><td>22:00</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>De las Ballenas 165</td><td>Domicilio Particular</td><td>Ricardo Leopoldo Luna</td><td>Nn</td><td>Autores ignorados violentan el mosquitero de un ventanal y sustraen vestimenta varia, una valija, 6000 en efectivo y documentacion varia.</td></tr>
+ <tr><td>06/01/2018</td><td>Sabado</td><td>21:30</td><td>Hurto</td><td>Carilo</td><td>D1</td><td>Ñandubay 1029</td><td>Lugar Particular</td><td>Sosa Mabel Nilda</td><td>Nn</td><td>Autores ignorados ingresan por vetana sin provocar daño alguno y sustraen de la misma una cartera con documentacion, billetera y dinero en efectivo.</td></tr>
+ <tr><td>06/01/2018</td><td>Sabado</td><td>14:00</td><td>Robo</td><td>Pinamar</td><td>A2</td><td>Fragata 25 de Mayo 168</td><td>Domicilio Particular</td><td>Bottaro Sebastian Eduardo</td><td>Nn</td><td>Autores ignorados previo ejercer violencia sustraen prenda de vestir varia, un celular y juego de llaves</td></tr>
+ <tr><td>06/01/2018</td><td>Sabado</td><td>Sin especificar</td><td>Lesiones</td><td>Pinamar</td><td>A1</td><td>El Más Allá</td><td>Via Publica</td><td>Vallero Lucas</td><td>Bidondo Nestor Ulises</td><td>Accidente de Transito</td></tr>
+ <tr><td>06/01/2018</td><td>Sabado</td><td>22:00</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Gulliver 764</td><td>Domicilio Particular</td><td>Haydee Micaela Di Pasquo</td><td>Nn</td><td>Autores ignorados previo ejercer violencia sustraen una suma de 46.000 pesos documentacion varia y otros elementos.</td></tr>
+ <tr><td>07/01/2018</td><td>Domingo</td><td>21:15</td><td>Ley Nº 23.737</td><td>Ostende</td><td>B1</td><td>Nuestras Malvinas y Sarmiento</td><td>Via Publica</td><td>Personal Policial</td><td>Singer Chellew Abed El Karim</td><td>El imputado poseia en su poder 1,1 grms de Marihuana</td></tr>
+ <tr><td>07/01/2018</td><td>Domingo</td><td>Sin especificar</td><td>Robo</td><td>Carilo</td><td>D2</td><td>Fabrica de Cerveza</td><td>Via Publica</td><td>Roncolato Augusto Adolfo</td><td>Nn</td><td>Autores ignorados habrian violentado cistal del lado del acompañante sustrayendo documentacion, prendas, notebook y otras pertenencias.</td></tr>
+ <tr><td>07/01/2018</td><td>Domingo</td><td>Sin especificar</td><td>Robo</td><td>Carilo</td><td>D2</td><td>Benteveo</td><td>Via Publica</td><td>Derrier Gustavo Fabian</td><td>Nn</td><td>Autores ignorados habrian violentado el cristal del lado del acompañante logrando asi sustraer varias pertenencias del interior.</td></tr>
+ <tr><td>07/01/2018</td><td>Domingo</td><td>02:00</td><td>Daño</td><td>Pinamar</td><td>A8</td><td>Simbad el Marino y Eolo</td><td>Via Publica</td><td>Tizio Mayer Ricardo Victor</td><td>Nn</td><td>Accidente de Transito</td></tr>
+ <tr><td>08/01/2018</td><td>Lunes</td><td>12:30</td><td>Robo</td><td>Valeria del Mar</td><td>C2</td><td>Garay 1590</td><td>Domicilio Particular</td><td>Sturla Natalia Andrea</td><td>Nn</td><td>Autores ignorados previo violentar el postigon de una de las ventanas, ingresan sustrayendo del interior tres telefonos celulares, billetera, una notebook, mochila y binoculares</td></tr>
+ <tr><td>08/01/2018</td><td>Lunes</td><td>12:50</td><td>Robo</td><td>Carilo</td><td>D1</td><td>Cohihue y Divisadero</td><td>Via Publica</td><td>Lujan Raul Manuel</td><td>Nn</td><td>Camioneta kangoo blanca se traslada hacia el banco provincia a efectuar deposito siendo interceptada en calle Cohiue y Divisadero por un vehiculo 206 de frente y una Ranger blanca que lo toca en la parte trasera y un Focus de color verde con cola, se baja un sujeto y mediante intimidacion con arma de fuego al acompañante sustrae una mochila de color marron con una cifra de dinero importante.</td></tr>
+ <tr><td>08/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Valle Fertil 472</td><td>Domicilio Particular</td><td>Carlos Alexis Videla</td><td>Nn</td><td>Autores ignorados sustraen de la vivienda una notebook, una tablet, un smartwatch, un celular, dos camperas y 20.000 pesos.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>22:30</td><td>Daño</td><td>Carilo</td><td>D2</td><td>Fabrica de Cerveza</td><td>Via Publica</td><td>Tardivo Liliana Estela</td><td>Nn</td><td>Autores ignorados dañan el ventilete del lado del acompañante delantero.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>20:00</td><td>Daño</td><td>Carilo</td><td>D2</td><td>Cerezo y Divisadero</td><td>Via Publica</td><td>Faccipieri Guillarme Edmundo</td><td>Nn</td><td>Autores ignorados dañan ventanilla delantera del lado de conductor.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>21:00</td><td>Daño</td><td>Carilo</td><td>D2</td><td>Avellano y Divisadero</td><td>Via Publica</td><td>Garibaldi Paola Elizabeth</td><td>Nn</td><td>Autores ignorados habian dañado el ventilete del lado del conductor no se constatan faltantes.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>10:00</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Totoras y Rivadavia</td><td>Lugar Publico</td><td>Teresa Diez De Tejada</td><td>Nn</td><td>Autores ignorados abren el vehiculo mientras se encontraba estacionado y sustraen la suma de 15.000 pesos en efectivo</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A4</td><td>Av. Del Mar y Langostinos</td><td>Lugar Publico</td><td>Diego Etcheverry</td><td>Nn</td><td>Autores ignorados previo forzar cerradura del vehiculo sustraen una valija con ropa varia y una mochila con la suma de 100.000 pesos.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>01:30</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>De las Almejas 20</td><td>Domicilio Particular</td><td>Juan Garro</td><td>Nn</td><td>Autores ignorados ingresan por ventana lateral corrediza sustrayendo una notebook y dinero en efectivo.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>19:15</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Av. de las Acacias & Del Buen Orden</td><td>Domicilio Particular</td><td>Gaston Tobias Yiaryulo</td><td>Nn</td><td>Autores ignorados ingresan por puerta trasera y sustraen una computadora, playstation 3, un celular, documentacion varia y tarjetas de credito.</td></tr>
+ <tr><td>09/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Rivadavia 575</td><td>Lugar Particular</td><td>Marcelo Jose Daubian </td><td>Nn</td><td>Autores ignorados dañan vidrio del vehiculo sustrayendo un gps, un pendrive y un sillon de playa.</td></tr>
+ <tr><td>10/01/2018</td><td>Miercoles</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Bunge y Simbad el Marino</td><td>Lugar Publico</td><td>Valeria Roxana Agazzi</td><td>Nn</td><td>Sustraen a uno de sus hijos un iphone 7 en un descuido.</td></tr>
+ <tr><td>10/01/2018</td><td>Miercoles</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Del Hipocampo y Cangrejo</td><td>Domicilio Particular</td><td>Silvia Monte Cacetti</td><td>Nn</td><td>Autores ignorados violentan la ventana y sustraen una tablet, alajas y 100.000 pesos</td></tr>
+ <tr><td>10/01/2018</td><td>Miercoles</td><td>17:00</td><td>Robo</td><td>Pinamar</td><td>A2</td><td>Argos 2150</td><td>Domicilio Particular</td><td>Olariaga Adrian Adolfo</td><td>Nn</td><td>Autores ignorados sustraen una tablet y dos celulares y 13.000 pesos</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>15:00</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>De las Medusas 1050</td><td>Domicilio Particular</td><td>Iglesias Cristina</td><td>Nn</td><td>Autores ignorados fuerzan puerta trasera corrediza sustrayendo una notebook, una tablet, un celular y 28.000 pesos en efectivo.</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>05:30</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Del Caracol y Sirena</td><td>Via Publica</td><td>Geronimo Martinez Folquer</td><td>Britez Nicolas Javier, Astudillo Julian Leonardo y Sebastian Ezequiel Ramirez</td><td>El grupo de masculinos intercepta al denunciante sustrayendole un celular y dinero en efectivo, los mismos son aprehendidos.</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>16:30</td><td>Robo</td><td>Pinamar</td><td>A2</td><td>Av. Del Mar y De la Retama</td><td>Via Publica</td><td>Alejandra Javier Ameijienda</td><td>Nn</td><td>Autores ignorados dañan cerradura del vehiculo y sustraen 20.000 pesos en efectivo, estereo del vehiculo, mochila, reproductor dvd, documentacion varia, una tablet y un celular.</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>16:00</td><td>Robo</td><td>Pinamar</td><td>A2</td><td>Av. Del Mar y Fragata 25 de Mayo</td><td>Via Publica</td><td>De la Torre Guadalupe</td><td>Nn</td><td>Autores ignorados violentan la cerradura del vehiculo y sustraen el estereo del vehiculo</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>13:30</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>De las Medusas 1032</td><td>Domicilio Particular</td><td>Maria Fernanda Viero</td><td>Nn</td><td>Autores ignorados ingresan a la casa por una ventana y sustraen la suma de 10.000 pesos en efectivo</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>23:00</td><td>Hurtos</td><td>Pinamar</td><td>A5</td><td>Bunge y Libertador</td><td>Via Publica</td><td>Lindon Saul Leonardo</td><td>Nn</td><td>Autores ignorados rayan el vehiculo del denunciante y le sustraen la patente.</td></tr>
+ <tr><td>11/01/2018</td><td>Jueves</td><td>17:00</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Av. Del Mar y Las Almejas</td><td>Via Publica</td><td>Riguel Luciano Martin</td><td>Nn</td><td>Autores ignorados fuerzan la puerta del vehiculo y sustraen el estereo y un celular.</td></tr>
+ <tr><td>12/01/2018</td><td>Viernes</td><td>07:00</td><td>Hurto</td><td>Ostende</td><td>B4</td><td>Esparza y Mons</td><td>Lugar Particular</td><td>Balbuena Nelson Dario</td><td>Nn</td><td>El denunciante constante el faltante de su motovehiculo Yamaha color azul, el mismo estaba en la puerta de su domicilio sin cadena alguna.</td></tr>
+ <tr><td>12/01/2018</td><td>Viernes</td><td>Sin especificar</td><td>Hurto</td><td>Ostende</td><td>B4</td><td>Balneario La Rambla</td><td>Lugar Publico</td><td>Salpeter Roxana Gabriela</td><td>Nn</td><td>Autores ignorados sin ejercer violencia sustraen un desfribilador externo, ubicado en una caja estanca en el ingreso al salon del restaurante. La ultima vez que la dicente avisto dicho desfribilador fue el dia sabado 06 de enero.</td></tr>
+ <tr><td>12/01/2018</td><td>Viernes</td><td>13:30</td><td>Lesiones</td><td>Pinamar</td><td>A4</td><td> Goleta Independencia y Shaw</td><td>Via Publica</td><td>Gonzalez Nestor Fabian</td><td>Fechero Laura Graciela</td><td>Accidente de Transito</td></tr>
+ <tr><td>13/01/2018</td><td>Sabado</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Av. Arq Jorge Bunge 48</td><td>Lugar Publico</td><td>Sanchez Croccio </td><td>Agustin Fuchs, Areudo Nicolas Sergio, Alvarez Gibaut Francisco Jose, Kreplak Sofia, Roseto Luna.</td><td>El denunciante es interceptado por un vehiculo y lo intimidan con un arma de fuego para que el y sus acompañantes entregen las pertenencias. En la busqueda se logra dar con los delincuentes y son aprehendidos.</td></tr>
+ <tr><td>13/01/2018</td><td>Sabado</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Jason 1555</td><td>Domicilio Particular</td><td>Tsoukalas Marcelo Angel</td><td>Nn</td><td>Autores ignorados ingresan por la ventana de la vivienda y sustraen una mochila, una tablet, notebook y 50.000 pesos</td></tr>
+ <tr><td>13/01/2018</td><td>Sabado</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A4</td><td>Burriqueta y Tobias</td><td>Domicilio Particular</td><td>Garcia Sebastian Rodrigo</td><td>Nn</td><td>Autores ignorados sin ejercer violencia sustraen una suma de 3500 pesos y un celular.</td></tr>
+ <tr><td>14/01/2018</td><td>Domingo</td><td>11:00</td><td>Hurto</td><td>Ostende</td><td>B1</td><td>Central 499</td><td>Lugar Particular</td><td>Tallarico Alfredo Maximiliano</td><td>Nn</td><td>Autores ignorados previo ingresar por una puerta balcon del posterior de la vivienda sustraen una mochila con efectivo, ropa varia y bebidas</td></tr>
+ <tr><td>14/01/2018</td><td>Domingo</td><td>03:30</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Bunge 1055</td><td>Lugar Publico</td><td>Marina Jessica Guacci</td><td>Nn</td><td>Autores ignorados sustraen del auto con ventanilla baja un bolso con un celular y documentacion varia.</td></tr>
+ <tr><td>15/01/2018</td><td>Lunes</td><td>22:40</td><td>Lesiones</td><td>Carilo</td><td>D2</td><td>Casuarina y Perdiz</td><td>Lugar Publico</td><td>Falcon Carlos Daniel</td><td>Eduardo Solano</td><td>El masculino Eduardo Solano agrede fiscamente dejando inconciente al denunciante.</td></tr>
+ <tr><td>15/01/2018</td><td>Lunes</td><td>15:40</td><td>Lesiones</td><td>Pinamar</td><td>A1</td><td>El Más Allá</td><td>Lugar Publico</td><td>Jonatan Lee</td><td>Hoyeghgwco Lee</td><td>Accidente de Transito</td></tr>
+ <tr><td>15/01/2018</td><td>Lunes</td><td>19:50</td><td>Lesiones</td><td>Pinamar</td><td>A1</td><td>El Más Allá</td><td>Lugar Publico</td><td>Martin Ivan</td><td>Herrara Agustin</td><td>Accidente de Transito</td></tr>
+ <tr><td>15/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>Del Tuyu y Robinson Crusoe</td><td>Lugar Particular</td><td>Nahime Porreti</td><td>Nn</td><td>Autores ignorados sustraen una caja con mercaderia que se encontraba afuera del local.</td></tr>
+ <tr><td>15/01/2018</td><td>Lunes</td><td>22:30</td><td>Robo</td><td>Pinamar</td><td>A4</td><td>De los Escualos 1181</td><td>Domicilio Particular</td><td>Gustavo Poggi</td><td>Nn</td><td>Autores ignorados violentan el candado y la reja sustrayendo de la casa una computadora, un parlante, ropa y 1000 pesos.</td></tr>
+ <tr><td>16/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Melgacho 1471</td><td>Lugar Particular</td><td>Faundez Diego Alberto</td><td>Nn</td><td>Autores ignorados ingresan al taller mecanico sin ejercer violencia y sustraen una camioneta, un cuatriciclo, varias herramientas y tres cheques.</td></tr>
+ <tr><td>16/01/2018</td><td>Martes</td><td>22:30</td><td>Lesiones</td><td>Pinamar</td><td>A6</td><td>Valle Fertil y Rivadavia</td><td>Via Publica</td><td>Christian Ricardo Fuentes</td><td>Alcorta Clara Maria</td><td>Accidente de Transito</td></tr>
+ <tr><td>16/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Rivadavia 473</td><td>Domicilio Particular</td><td>Silvio Gaston Carrera</td><td>Nn</td><td>Autores ignorados previo violentar puerta delantera sustraen 20.000 pesos y una billetera.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>Sin especificar</td><td>Ley Nº. 23.737</td><td>Valeria del Mar</td><td>C1</td><td>Espora y Playa</td><td>Via Publica</td><td>Personal Policial</td><td>Gilmartin Diego Lucas Ezequiel y Marsans Federico</td><td>Los mismos tenian en su poder 18 grms de marihuana</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>09:00</td><td>Robo</td><td>Ostende</td><td>B4</td><td>Victor Hugo y Arcachon</td><td>Via Publica</td><td>Guido Marinoff Mischesff</td><td>Julian Nahuel, Agustin Abraham y Emiliano Ledesma</td><td>Autores se bajan del autobus junto con la victima y toman la bolsa con efectivo que este tenia en sus manos para darse a la fuga.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Del Buen Orden 342</td><td>Domicilio Particular</td><td>Gallo Tagle Marcelo Luis</td><td>Nn</td><td>Autores ignorados fuerzan puerta y mosquitero revisando toda la casa, elementos a constatar.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>00:00</td><td>Robo</td><td>Pinamar</td><td>A4</td><td>Martin Pescador 863</td><td>Domicilio Particular</td><td>Lucero Marcelo Adriana</td><td>Nn</td><td>Autores ignorados fuerzan puerta trasera y sustraen cuatro tablet, una playstation 4, una camara, 60.000 en efectivo y 100 dolares.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>11:00</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Bunge y Marco Polo</td><td>Transporte Publico</td><td>Adela Liliana Torres</td><td>Nn</td><td>Le sustraen en un taxi una bandolera con documentacion varia y tarjetas de credito.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>23:00</td><td>Hurto</td><td>Pinamar</td><td>A4</td><td>De las Artes 1371</td><td>Domicilio Particular</td><td>Bara Carlos Maria</td><td>Nn</td><td>Autores ignorados ingresan por ventana del domicilio sustrayendo cuatro celular, una camara y cuatro mil pesos.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Muelle</td><td>Lugar Publico</td><td>Gamboa Emanuel Alejandro</td><td>Nn</td><td>Autores ignorados violentan puerta del muelle y sustraen un torpedo y una campera.</td></tr>
+ <tr><td>17/01/2018</td><td>Miercoles</td><td>18:00</td><td>Robo</td><td>Pinamar</td><td>A4</td><td>Centauro 1576</td><td>Domicilio Particular</td><td>Tribe Leonor Viviana</td><td>Nn</td><td>Autores ignorados fuerzan la puerta y reja del domicilio y sustraen 11.000 pesos, 100 dolares y dos celulares</td></tr>
+ <tr><td>18/01/2018</td><td>Jueves</td><td>15:00</td><td>Robo</td><td>Pinamar</td><td>A2</td><td>Libertador 4100</td><td>Domicilio Particular</td><td>Grela Gabriel Leandro</td><td>Nn</td><td>Autores ignorados dañan ventana trasera y sustraen mochilas, con documentacion varia y tarjetas de credito.</td></tr>
+ <tr><td>18/01/2018</td><td>Jueves</td><td>17:00</td><td>Hurto</td><td>Carilo</td><td>D1</td><td>Paraiso y Hornero</td><td>Domicilio Particular</td><td>Ortero Maria Florencia</td><td>Nn</td><td>Autores ignorados habrian ingresado por la ventana y sustraen 8.000 pesos</td></tr>
+ <tr><td>19/01/2018</td><td>Viernes</td><td>23:00</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Tridente 1060</td><td>Domicilio Particular</td><td>Grispino Alejandro</td><td>Nn</td><td>Autores ignorados ingresan por ventana lateral forzando la reja y sustrayendo 50.000 pesos argentinos, 300 dolares y otros elementos varios.</td></tr>
+ <tr><td>19/01/2018</td><td>Viernes</td><td>00:50</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>De las Artes 378</td><td>Domicilio Particular</td><td>Anna Lutsenko</td><td>Nn</td><td>Autores ignorados ingresan por la ventana del departamento y sustraen unos lentes ray ban y un hornillo de aceite.</td></tr>
+ <tr><td>19/01/2018</td><td>Viernes</td><td>21:30</td><td>Hurto</td><td>Pinamar</td><td>A8</td><td>Libertador y Jonas</td><td>Via Publica</td><td>Uribe Raul Alberto</td><td>Nn</td><td>Autores ignorados sustraen la patente del vehiculo.</td></tr>
+ <tr><td>20/01/2018</td><td>Sabado</td><td>01:30</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Av. Del Mar 24</td><td>Via Publica</td><td>Becerra Valeria Andrea</td><td>Arcos Juan Pablo</td><td>Un masculino sustrae una mochila con 33000 pesos y una pistola reglamentaria, el mismo es interceptado y aprehendido.</td></tr>
+ <tr><td>20/01/2018</td><td>Sabado</td><td>20:30</td><td>Lesiones</td><td>Pinamar</td><td>A1</td><td>Elios y Libertador</td><td>Via Publica</td><td>Milo Terramagra, Pereyra Paula</td><td>Fariña Agustin Alberto</td><td>Accidente de Transito</td></tr>
+ <tr><td>20/01/2018</td><td>Sabado</td><td>23:15</td><td>Tentativa de Robo</td><td>Ostende</td><td>B4</td><td>Esparza y Victor Hugo</td><td>Via Publica</td><td>Squeti Aydee Rufina</td><td>Nn</td><td>Masculino intenta sustraer el celular y pertenencias de la denunciante, al llegar una persona se da a la fuga.</td></tr>
+ <tr><td>21/01/2018</td><td>Domingo</td><td>Sin especificar</td><td>Lesiones</td><td>Pinamar</td><td>A6</td><td>Bunge 999</td><td>Lugar Publico</td><td>Lucas Hernan Puig</td><td>Nn</td><td>Confrontacion</td></tr>
+ <tr><td>21/01/2018</td><td>Domingo</td><td>11:00</td><td>Robo</td><td>Valeria del Mar</td><td>C1</td><td>Fragata Hercules 248</td><td>Domicilio Particular</td><td>Carballeria Diana</td><td>Nn</td><td>Autores ignorados violentan la puerta y sustraen cuatro celulares, una tablet, una nintento switch y 15.000 pesos</td></tr>
+ <tr><td>21/01/2018</td><td>Domingo</td><td>11:00</td><td>Robo</td><td>Carilo</td><td>D1</td><td>Avutarda y Mimbre</td><td>Via Publica</td><td>Virzi Leonel</td><td>Nn</td><td>Autores ignorados previo ejercer violencia en la cerradura del vehiculo sustraen dos bolsos y una notebook</td></tr>
+ <tr><td>21/01/2018</td><td>Domingo</td><td>Sin especificar</td><td>Robo</td><td>Valeria del Mar</td><td>C3</td><td>Halcon 1015</td><td>Domicilio Particular</td><td>Mareyra  Maria Laura</td><td>Nn</td><td>Autores ignorados previo violentar reja, ingresan y sustraen 10000 pesos, televisor, tablet, notebook, PlayStation y una valija.</td></tr>
+ <tr><td>21/01/2018</td><td>Domingo</td><td>13:00</td><td>Robo</td><td>Valeria del Mar</td><td>C3</td><td>Cristóbal Colón 798</td><td>Domicilio Particular</td><td>Segura Sergio Eduardo</td><td>Nn</td><td>Autores ignorados previo violentar la puerta trasera del domicilio sustraen 3 telefonos, 20000 pesos, nintendo switch y prendas varias.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Constitucion 1810</td><td>Domicilio Particular</td><td>Caterina Furlan</td><td>Nn</td><td>Autores ignorados sin ejercer violencia y sustraen pertenencias sin dejar rastros de desorden.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>04:30</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Av. Arq Jorge Bunge 48</td><td>Lugar Publico</td><td>Facundo Perez</td><td>Nn</td><td>Se le aproximan dos sujetos al ciudadano y le sustraen sin violencia un iphone y una billetera con 1.300 pesos.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Daño</td><td>Pinamar</td><td>A6</td><td>Simbad el Marino 148</td><td>Domicilio Particular</td><td>Gallo Tagle Marcelo Luis</td><td>Nn</td><td>Autores ignorados ejercen violencia sobre postigos que traban la puerta y el marco de la ventana al activarse la alarma se dan a la fuga.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Lesiones</td><td>Pinamar</td><td>A4</td><td>Av. Del Mar y De Los Tirremes</td><td>Via Publica</td><td>Frias Florencia</td><td>Stark Julieta</td><td>Accidente de Transito</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>00:40</td><td>Robo</td><td>Ostende</td><td>B5</td><td>España 1072</td><td>Domicilio Particular</td><td>Mariana Silvia Elizabeth</td><td>Nn</td><td>Autores ignroados rompen el mosquitero y sustraen del domicilio una cartera con documentacion varia y llaves.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>09:14</td><td>Lesiones</td><td>Ostende</td><td>B2</td><td>Victor Hugo y Pichincha</td><td>Via Publica</td><td>Tisera Franco</td><td>Contreras Muñoz Juan</td><td>Accidente de Transito</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>20:50</td><td>Lesiones</td><td>Ostende</td><td>B2</td><td>Victor Hugo y España</td><td>Via Publica</td><td>Mariana Veronica Lombera</td><td>Nn</td><td>Accidente de transito, el auto se da a la fuga.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>12:55</td><td>Lesiones</td><td>Ostende</td><td>B1</td><td>BARTOLOME Mitre</td><td>Domicilio Particular</td><td>Nadia Magali De la Calle</td><td>Nn</td><td>Confrontacion</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>23:30</td><td>Hurto</td><td>Ostende</td><td>B1</td><td>Nuestras Malvinas 1134</td><td>Domicilio Particular</td><td>Francisco Cesar Del Carril</td><td>Nn</td><td>Autores ignorados ingresan por una ventana y sustraen, una camara, dos tablet, parlante y 600 pesos.</td></tr>
+ <tr><td>22/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Lesiones</td><td>Carilo</td><td>D2</td><td>Acacia y Benteveo</td><td>Via Publica</td><td>Juan Cruz Ascua</td><td>Brest Guido Martin</td><td>Accidente de Transito</td></tr>
+ <tr><td>23/01/2018</td><td>Martes</td><td>06:00</td><td>Lesiones</td><td>Pinamar</td><td>A8</td><td>Simbad el Marino y Del Odiseo</td><td>Lugar Publico</td><td>Jeremias Anderson</td><td>Nn</td><td>Confrontacion</td></tr>
+ <tr><td>23/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Lesiones</td><td>Pinamar</td><td>A8</td><td>Mar y Quintana</td><td>Lugar Publico</td><td>Fowler Dapremon</td><td>De Lucca Francisco Javier y Bordobello Timoteo</td><td>Confrontacion</td></tr>
+ <tr><td>23/01/2018</td><td>Martes</td><td>10:42</td><td>Daño</td><td>Ostende</td><td>B1</td><td>Defensa 474</td><td>Domicilio Particular</td><td>Alberto de Gasperin</td><td>Nn</td><td>Autores ignorados rompen una reja hacia el fondo de su vivienda.</td></tr>
+ <tr><td>23/01/2018</td><td>Martes</td><td>10:02</td><td>Hurto</td><td>Ostende</td><td>B1</td><td>Nuestras Malvinas 938</td><td>Domicilio Particular</td><td>Roberto Fermin Gorosito</td><td>Nn</td><td>Autores ignorados previo abrirle abrirle una puerta de un deposito le sustraen agujereadora y una amoladora.</td></tr>
+ <tr><td>23/01/2018</td><td>Martes</td><td>18:32</td><td>Tentativa de Hurto</td><td>Ostende</td><td>B4</td><td>Victor Hugo 1845</td><td>Domicilio Particular</td><td>Diaz Valeria Pascual</td><td>Nn</td><td>Deja la moto en marcha afuera y al salir observa que una femenina sustrae el motovehiculo emprendiendo fuga y lo abandona en monaco y arcachon.</td></tr>
+ <tr><td>23/01/2018</td><td>Martes</td><td>18:17</td><td>Robo</td><td>Ostende</td><td>B4</td><td>URQUIZA Y AV. DEL PARQUE</td><td>Domicilio Particular</td><td>Carlos Alfredo Tuner</td><td>Nn</td><td>Autores ignorados violentan puerta del obrador sustrayendo un trompito color naranja con ruedas negras.</td></tr>
+ <tr><td>24/01/2018</td><td>Miercoles</td><td>15:30</td><td>Robo</td><td>Pinamar</td><td>A5</td><td>Juno y Jason</td><td>Via Publica</td><td>Coronel Fabian Gustavo</td><td>Nn</td><td>Dos sujetos con vestimentas oscuras, casco negro, en un motovehiculo arrebatan la mochila al dicente con 120.000 pesos en efectivo y documentacion personal.</td></tr>
+ <tr><td>24/01/2018</td><td>Miercoles</td><td>00:00</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Av. Arq Jorge Bunge 48</td><td>Lugar Publico</td><td>Abril Tomas y Carlos Crescencio</td><td>Nn</td><td>Se aproximan dos sujetos a los ciudadanos diciendoles que se queden callados que se encontraban armados, sustrayendoles dos celulares y 500 pesos.</td></tr>
+ <tr><td>24/01/2018</td><td>Miercoles</td><td>20:00</td><td>Robo</td><td>Pinamar</td><td>A5</td><td>Del Cazon 1707</td><td>Domicilio Particular</td><td>Graciela Rosa Obait</td><td>Nn</td><td>Autores ignorados violentan mosquitero de una ventana trasera y sustraen una tablet y joyeria.</td></tr>
+ <tr><td>24/01/2018</td><td>Miercoles</td><td>18:00</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Bunge y Jonas</td><td>Lugar Publico</td><td>Paredes Jorge Andres</td><td>Nn</td><td>Autores ignorados sustraen de la mochila del denunciante 9000 pesos, 1200 dolares y una camara.</td></tr>
+ <tr><td>24/01/2018</td><td>Miercoles</td><td>00:40</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Av. Arq Jorge Bunge 48</td><td>Via Publica</td><td>Plaza Francisco Joaquin</td><td>Nn</td><td>Varios masculinos interceptan al denunciante golpeandolo y sustrayendole el celular.</td></tr>
+ <tr><td>25/01/2018</td><td>Jueves</td><td>21:00</td><td>Daño</td><td>Pinamar</td><td>A6</td><td>Del Mejillon 691</td><td>Domicilio Particular</td><td>Larumbe Arauje Mariana</td><td>Nn</td><td>Autores ignorados habrian violentado la reja de la parte trasera de la vivienda, no se registran faltantes.</td></tr>
+ <tr><td>25/01/2018</td><td>Jueves</td><td>04:00</td><td>Daño</td><td>Pinamar</td><td>A4</td><td>Av. Del Mar 656</td><td>Domicilio Particular</td><td>Marco Stefani</td><td>Nn</td><td>Momentos de la madrugada escuchan como patean la puerta con intenciones de entrar a la vivienda, al llegar la policia los autores no se encontraban.</td></tr>
+ <tr><td>25/01/2018</td><td>Jueves</td><td>Sin especificar</td><td>Hurto</td><td>Carilo</td><td>D1</td><td>Chingolo 606</td><td>Domicilio Particular</td><td>Gaspardi Guillermo Angel</td><td>Nn</td><td>Autores ignorados ingresan y sustraen un celular, una tablet, zapatillas, billetera, mochila y campera.</td></tr>
+ <tr><td>25/01/2018</td><td>Jueves</td><td>22:30</td><td>Robo</td><td>Valeria del Mar</td><td>C3</td><td>Coronel de Marina Seguí 748</td><td>Domicilio Particular</td><td>Carena Pedro Pablo</td><td>Nn</td><td>Autores ignorados previo violentar ventana sustraen una computadora, 2000 pesos, prendas varias y bolsos.</td></tr>
+ <tr><td>26/01/2018</td><td>Viernes</td><td>17:00</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Galeria Pinamar La Plaza</td><td>Lugar Publico</td><td>Personal Policial</td><td>Nazarena Lerner, Candelaria Lerner, Franicevich Mayra y Bruno Martina Lola</td><td>Varios trabajadores de los locales estaban reportando hurtos por 4 femeninas las cuales son interceptadas y aprehendidas con ropas de 9 locales.</td></tr>
+ <tr><td>26/01/2018</td><td>Viernes</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A4</td><td>Del Centauro 1289</td><td>Domicilio Particular</td><td>Gonzalez Hector Videla</td><td>Nn</td><td>Autores ignorados previo ejercer violencia sobre la ventana sustraen 18.000 pesos, 1.800 dolares, dos tablet, notebook, y elementos varios.</td></tr>
+ <tr><td>26/01/2018</td><td>Viernes</td><td>Sin especificar</td><td>Daño</td><td>Pinamar</td><td>A6</td><td>Bunge y De las Sirenas</td><td>Via Publica</td><td>Mattei Lucas Agustin</td><td>Nn</td><td>Autores ignorados rompen el cristal trasero del vehiculo.</td></tr>
+ <tr><td>26/01/2018</td><td>Viernes</td><td>15:45</td><td>Hurto</td><td>Pinamar</td><td>A2</td><td>Balneario Cocodrilo Pinamar</td><td>Lugar Publico</td><td>Sergio Manuel Rueda Lopez</td><td>Nn</td><td>Autores ignorados sustraen un bolso con la suma de 60.000 pesos, un celular, tres cheques y una pistola semi automatica.</td></tr>
+ <tr><td>26/01/2018</td><td>Viernes</td><td>Sin especificar</td><td>Ley N° 23.737</td><td>Carilo</td><td>D3</td><td>Acceso Carilo</td><td>Via Publica</td><td>Personal Policial</td><td>Corbalan Gaston Damian</td><td>8.6 gramos de marihuana</td></tr>
+ <tr><td>27/01/2018</td><td>Sabado</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A5</td><td>Totoras y Cazon</td><td>Lugar Publico</td><td>Fernando David Mamani Mamani</td><td>Nn</td><td>El cidadano dejo su moto estacionada en el playon de disco y al terminar su turno la misma ya no se encontraba en el lugar.</td></tr>
+ <tr><td>27/01/2018</td><td>Sabado</td><td>16:30</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Av. Del Mar y Quintana</td><td>Via Publica</td><td>Agustin Gazquez</td><td>Nn</td><td>Autores ignorados violentan vidrio derecho del vehiculo sustrayendo herramientas, una notebook, 30000 pesos, un compresor y la patente trasera.</td></tr>
+ <tr><td>27/01/2018</td><td>Sabado</td><td>08:00</td><td>Robo</td><td>Pinamar</td><td>A5</td><td>De las Totoras 535</td><td>Lugar Particular</td><td>Cristian Ruben Coria</td><td>Nn</td><td>Autores ignorados ingresan al negocio sustrayendo un valor de 50.000 pesos en cajones de frutas.</td></tr>
+ <tr><td>27/01/2018</td><td>Sabado</td><td>Sin especificar</td><td>Robo</td><td>Carilo</td><td>D3</td><td>Petrel 356</td><td>Domicilio Particular</td><td>Nuñez Alvaro Enrique</td><td>Nn</td><td>Autores ignorados fuerzan ventana lateral y sustraen dos computadoras, vestimenta varia, dos relojes y un celular.</td></tr>
+ <tr><td>28/01/2018</td><td>Domingo</td><td>06:30</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Bunge y Sirena</td><td>Lugar Publico</td><td>Julieta Ayelen Gorosito</td><td>Denis Liber Guillermo</td><td>Masculino sustrae una mochila que contenia un celular, billetera y una gorra, el mismo es aprehendido.</td></tr>
+ <tr><td>28/01/2018</td><td>Domingo</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A7</td><td>-37.11822, -56.88408</td><td>Domicilio Particular</td><td>Axel Fatica</td><td>Nn</td><td>Autores ignorados sin ejercer violencia sustraen un televisor y un equipo de musica.</td></tr>
+ <tr><td>28/01/2018</td><td>Domingo</td><td>07:09</td><td>Daño</td><td>Ostende</td><td>B1</td><td>Almirante Brown 74</td><td>Domicilio Particular</td><td>Joaquin Cordoba</td><td>Nn</td><td>Un grupo de aproximadamente doce y trece personas comienzan a golpear a el denunciante y sus amigos rompiendo ventanas, sillas, muebles.</td></tr>
+ <tr><td>28/01/2018</td><td>Domingo</td><td>Sin especificar</td><td>Hurto</td><td>Valeria del Mar</td><td>C2</td><td>Espora y Arcachon</td><td>Lugar Particular</td><td>Nuñez Cristian David</td><td>Nn</td><td>Autores ignorados sin ejercer violencia sustraen varios cajones de verdura.</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Hurto</td><td>Pinamar</td><td>A6</td><td>Bunge 545</td><td>Domicilio Particular</td><td>Maria Josefina Dibello</td><td>Nn</td><td>Faltante de cinta de correr y daños en la reja de entrada </td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>15:45</td><td>Robo</td><td>Pinamar</td><td>A2</td><td>Av. de las Tres Carabelas 251</td><td>Domicilio Particular</td><td>Locatelli Maria Estela</td><td>Nn</td><td>Autores ignorados fuerzan la reja de una ventana y sustraen 1500 dolares y 4000 pesos.</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>03:00</td><td>Robo</td><td>Pinamar</td><td>A6</td><td>Av. Arq Jorge Bunge 48</td><td>Via Publica</td><td>Manuel Menendez</td><td>Nn</td><td>Interceptan al denunciante tres masculinos y le sustraen el celular y la billetera con documentacion varia.</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>08:10</td><td>Hurto</td><td>Ostende</td><td>B1</td><td>Estrasburgo y Biarritz</td><td>Domicilio Particular</td><td>Dominguez Matias Leonardo</td><td>Gonzalez Jose Luis</td><td>Grupo de masculinos sospechosos son aprehendidos con pertenencias de un departamento como una mochila negra, dinero en efectivo, dos telefonos, una camara y una afeitadora.</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>00:48</td><td>Lesiones</td><td>Ostende</td><td>B2</td><td>Av. Central y Matheu</td><td>Domicilio Particular</td><td>Alfredo Andres Rios</td><td>Montenegro Mariano</td><td>Confrontacion</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>22:30</td><td>Hurto</td><td>Carilo</td><td>D2</td><td>Boyero 1420</td><td>Lugar Particular</td><td>Cincioni Carla</td><td>Nn</td><td>Tres personas ingresan al comercio y mientras dos distraian a la comerciante el otro sustrae vestido y finalmente se retiran del lugar.</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>Sin especificar</td><td>Lesiones</td><td>Carilo</td><td>D2</td><td>Castaño 274</td><td>Lugar Particular</td><td>Gabriela Laura Leonelli Linale</td><td>Estafania Soledad Funes</td><td>Confrontacion</td></tr>
+ <tr><td>29/01/2018</td><td>Lunes</td><td>11:35</td><td>Hurto</td><td>Valeria del Mar</td><td>C3</td><td>Balboa y Vasco Da Gama</td><td>Domicilio Particular</td><td>Lattanze Nicolas</td><td>Nn</td><td>Autores ignorados sin ejercer violencia sustraen un cuatriciclo.</td></tr>
+ <tr><td>30/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A4</td><td>De las Artes 14444</td><td>Domicilio Particular</td><td>Gustavo Amadeo Tesoro</td><td>Nn</td><td>Autores ignorados violentan rejas y sustraen 15.000 pesos en efectivo, documentacion varia, dos balijas y cinco mochilas con pertenencias varias.</td></tr>
+ <tr><td>30/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Tentativa de Robo</td><td>Pinamar</td><td>A4</td><td>De la Foca y De los Langostinos</td><td>Domicilio Particular</td><td>Personal Policial</td><td>Ocampos Juarez Juan Manuel y Lopez Mayra Samanta </td><td>En patrullaje son advertidos por 911 el intento de ingreso a una vivienda y logran dar con los delincuentes en el patio trasero.</td></tr>
+ <tr><td>30/01/2018</td><td>Martes</td><td>Sin especificar</td><td>Robo</td><td>Ostende</td><td>B2</td><td>Alberti y Lyons</td><td>Domicilio Particular</td><td>Hector Nelson Siles</td><td>Montenegro Mariano</td><td>Autores ignorados previo violentar la puerta de ingreso sustraen equipo de musica.</td></tr>
+ <tr><td>30/01/2018</td><td>Martes</td><td>04:45</td><td>Daño</td><td>Carilo</td><td>D2</td><td>Castaño y Boyero</td><td>Lugar Particular</td><td>Personal Policial</td><td>Nn</td><td>En patrullaje escuchan un ruido y al dirigirse al lugar de donde provino constatan un daño en el local, no se constatan faltantes.</td></tr>
+ <tr><td>31/01/2018</td><td>Miercoles</td><td>Sin especificar</td><td>Robo</td><td>Pinamar</td><td>A8</td><td>Av. Del Mar y Eolo</td><td>Via Publica</td><td>Benito Oscar Gonzales</td><td>Nn</td><td>Autores ignorados rompen el cristal del vehiculo y sustraen una riñonera con documentacion personal.</td></tr>
+ <tr><td>31/01/2018</td><td>Miercoles</td><td>18:50</td><td>Lesiones</td><td>Pinamar</td><td>A8</td><td>Jonas y Libertador</td><td>Via Publica</td><td>Pablo Vicente Enriquez</td><td>Nogueira Nicolas Martin</td><td>Accidente de Transito</td></tr>
+</tbody></table>
+</body>
+</html>
