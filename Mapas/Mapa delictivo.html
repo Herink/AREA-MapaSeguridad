@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa Delictivo</title>
+    <link rel="stylesheet" type="text/css" href="./dist/leaflet.css" />
+    <script type='text/javascript' src='./dist/leaflet.js'></script>
+
+    <script type='text/javascript' src='./dist/jquery.min.js'></script>
+
+
+    <link rel="stylesheet" type="text/css" href="./dist/MarkerCluster.css" />
+    <script type='text/javascript' src='./dist/leaflet.markercluster.js'></script>
+    <script src="./dist/layersupport.js"></script>
+
+    <link rel="stylesheet" href="./dist/css/styledLayerControl.css" />
+    <script src="./dist/styledLayerControl.js"></script>
+
+    <script type="text/javascript" src="dist/leaflet-control-credits.js"></script>
+    <link rel="stylesheet" href="dist/leaflet-control-credits.css" />
+    <style>
+          body {
+              padding: 0;
+              margin: 0;
+          }
+          html, body, #map {
+              height: 100%;
+              width: 100%;
+          }
+      </style>
+  </head>
+
+    <body>
+  		<div id = 'map'>
+  		</div>
+  	</body>
+
+<script>
+var myURL = jQuery( 'script[src$="leaflet.js"]' ).attr( 'src' ).replace( 'leaflet.js', '' );
+</script>
+
+
+    ////Enero////
+        <script type='text/javascript' src='maps/capas/Enero/danos.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/hurtos.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/lesiones.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/ley23737.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/robos.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/trobo.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/thurto.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/total.js'></script>
+
+        <script type='text/javascript' src='maps/capas/Enero/sdanos.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/shurtos.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/slesiones.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/sley23737.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/srobos.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/strobo.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/sthurto.js'></script>
+        <script type='text/javascript' src='maps/capas/Enero/stotal.js'></script>
+
+////Febrero////
+
+<script type='text/javascript' src='maps/capas/Febrero/dano.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/hurto.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/lesiones.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/ley23737.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/robo.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/trobo.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/thurto.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/total.js'></script>
+
+<script type='text/javascript' src='maps/capas/Febrero/sdano.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/shurto.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/slesiones.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/sley23737.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/srobo.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/strobo.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/sthurto.js'></script>
+<script type='text/javascript' src='maps/capas/Febrero/stotal.js'></script>
+
+////Marzo////
+
+<script type='text/javascript' src='maps/capas/Marzo/dano.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/hurto.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/lesiones.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/ley23737.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/robo.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/trobo.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/thurto.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/total.js'></script>
+
+<script type='text/javascript' src='maps/capas/Marzo/sdano.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/shurto.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/slesiones.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/sley23737.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/srobo.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/strobo.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/sthurto.js'></script>
+<script type='text/javascript' src='maps/capas/Marzo/stotal.js'></script>
+
+////Abril////
+
+<script type='text/javascript' src='maps/capas/Abril/dano.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/hurto.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/lesiones.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/ley23737.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/robo.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/trobo.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/thurto.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/total.js'></script>
+
+<script type='text/javascript' src='maps/capas/Abril/sdano.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/shurto.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/slesiones.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/sley23737.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/srobo.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/strobo.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/sthurto.js'></script>
+<script type='text/javascript' src='maps/capas/Abril/stotal.js'></script>
+
+    <script type='text/javascript' src='maps/mapa.js'></script>
+    <script type='text/javascript' src='maps/Maincode.js'></script>
+  </body>
+</html>

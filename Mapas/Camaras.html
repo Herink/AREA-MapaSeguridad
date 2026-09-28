@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./dist/leaflet.css" />
+	<script type='text/javascript' src='./dist/leaflet.js'></script>
+			 <script type="text/javascript" src="mon.js"></script>
+			 <script type="text/javascript" src="nomon.js"></script>
+			 <script type="text/javascript" src="dist/leaflet-control-credits.js"></script>
+			 <link rel="stylesheet" href="dist/leaflet-control-credits.css" />
+			 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+
+	<body>
+		<div id = 'map'>
+		</div>
+	</body>
+
+
+<script>
+{
+myIcon1=  L.divIcon({className: 'leaflet-div-icon2'})
+function estiloIcon(feature, latlng) {
+return L.marker(latlng, {icon: myIcon1})
+}
+}
+{
+myIcon2=  L.divIcon({className: 'leaflet-div-icon3'})
+function estiloIcon1(feature, latlng) {
+return L.marker(latlng, {icon: myIcon2})
+}
+}
+//capa principal con los datos originales del mapa
+var map = L.map('map', {
+    maxZoom: 15,
+    minZoom: 13,
+		attributionControl:false,
+	//el zoom maximo que uno puede acercarse //entre mas alto el numero, mas cercana la distancia//
+    maxBounds: [
+        //south west
+        [-37.1948, -57.0312],
+        //north east
+        [-37.0164, -56.7004]
+        ],
+		//el limite impuesto a el mapa
+}).setView([-37.1206, -56.8659], 13);
+    //la vista predeterminada junto con el zoom
+     L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+    {
+        attribution: 'Tiles &copy; Esri'
+    }
+).addTo(map);
+
+
+// el comando que lo agrega al mapa
+</script>
+
+<script type="text/javascript" src="mon.js"></script>
+<script>
+//puntos de los delitos
+L.geoJson(mon, {pointToLayer: estiloIcon}).addTo(map);
+</script>
+
+
+<script type="text/javascript" src="nomon.js"></script>
+<script>
+L.geoJson(nomon, {pointToLayer: estiloIcon1}).addTo(map);
+</script>
+
+<script>
+{
+	var legend = L.control({position: 'bottomleft'});
+
+	legend.onAdd = function (map) {
+
+	    var div = L.DomUtil.create('div', 'info legend'),
+	        grades = [" Monitoreado", " No Monitoreado"],
+	        labels = ["./dist/images/1.png","./dist/images/2.png"];
+
+	    // loop through our density intervals and generate a label with a colored square for each interval
+	    for (var i = 0; i < grades.length; i++) {
+	        div.innerHTML +=
+	           (" <img src="+ labels[i] +" height='20' width='20'>") + grades[i] +'<br>';
+	    }
+
+	    return div;
+	};
+
+	legend.addTo(map);
+}
+</script>
+
+
+
+</html>
